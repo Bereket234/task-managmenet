@@ -1,5 +1,5 @@
 const auth = require('../middlewares/auth')
-const owner = require('../middlewares/owner')
+const taskowner = require('../middlewares/taskOwner')
 const express = require('express');
 const router = express.Router();
 
@@ -38,7 +38,7 @@ router.post('/', auth, async (req, res) => {
   });
 
 
-  router.delete('/:id', auth, owner, async (req, res) => {
+  router.delete('/:id', auth, taskowner, async (req, res) => {
     try {
       const taskId = req.params.id;
   
@@ -56,7 +56,7 @@ router.post('/', auth, async (req, res) => {
 
 
 
-  router.put('/:id', auth, owner, async (req, res) => { try {
+  router.put('/:id', auth, taskowner, async (req, res) => { try {
       const taskId = req.params.id;
       const updatedData = req.body;
   
