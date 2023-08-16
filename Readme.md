@@ -82,6 +82,3 @@ For inquiries or suggestions, please contact
 bereket.nigussie@a2sv.org.
 
 vbnet
-
-
-Feel free to copy and paste this Markdown content into your code editor or repository's `README.md` file, then make any necessary adjustments to customize it for your project. Replace placeholders like `your-username`, `your-email@example.com`, and other details according to your project's specifics.
