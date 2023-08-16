@@ -80,5 +80,3 @@ Contact
 
 For inquiries or suggestions, please contact 
 bereket.nigussie@a2sv.org.
-
-vbnet
