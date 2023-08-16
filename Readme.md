@@ -55,23 +55,23 @@ sh
 
 API Routes
 
-    POST /register: Register a new user
-    POST /login: User login
-    POST /projects: Create a new project
-    GET /projects: Get all projects
-    PUT /projects/:id: Update a project
-    DELETE /projects/:id: Delete a project
+    POST /user: Register a new user
+    POST /auth: User login
+    POST /project: Create a new project
+    GET /project: Get all projects
+    PUT /project/:id: Update a project
+    DELETE /project/:id: Delete a project
     POST /tasks: Create a new task
     GET /tasks: Get all tasks
     PUT /tasks/:id: Update a task
     DELETE /tasks/:id: Delete a task
-    PUT /users/:id: Update a user
-    DELETE /users/:id: Delete a user
+    PUT /user/:id: Update a user
+    DELETE /user/:id: Delete a user
 
 Usage
 
-    Register a new user using /register or log in with /login.
-    Create projects using /projects, and assign tasks to projects.
+    Register a new user using /user or log in with /auth.
+    Create projects using /project, and assign tasks to projects.
     Manage tasks with /tasks, including updates to status and due dates.
     Collaborate by assigning tasks and sharing projects.
     ...

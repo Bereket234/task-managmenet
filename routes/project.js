@@ -35,7 +35,7 @@ router.post('/', auth, async (req, res) => {
 });
 
 // Update a project by ID
-router.put('/:id', auth, owner, async (req, res) => {
+router.put('/:id', [auth, owner], async (req, res) => {
     try {
       const projectId = req.params.id;
       const updatedData = req.body;
