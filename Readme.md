@@ -19,7 +19,6 @@ A web-based Task Management System that enables users to efficiently manage task
 - JSON Web Tokens (JWT)
 - bcrypt (Password Hashing)
 - body-parser (JSON Parsing)
-- ... (add other technologies)
 
 ## Getting Started
 

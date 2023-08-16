@@ -1,6 +1,7 @@
 const auth= require('../middlewares/auth')
 const express = require('express');
 const router = express.Router();
+const owner = require('../middlewares/owner')
 
 const Project = require('../models/project')
 
@@ -34,7 +35,7 @@ router.post('/', auth, async (req, res) => {
 });
 
 // Update a project by ID
-router.put('/projects/:id', auth, async (req, res) => {
+router.put('/:id', auth, owner, async (req, res) => {
     try {
       const projectId = req.params.id;
       const updatedData = req.body;
@@ -52,7 +53,7 @@ router.put('/projects/:id', auth, async (req, res) => {
   });
 
 // Delete a project by ID
-router.delete('/projects/:id', auth, async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
     try {
       const projectId = req.params.id;
   
